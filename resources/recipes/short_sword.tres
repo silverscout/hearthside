@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=2 format=3 uid="uid://short_sword_recipe"]
+
+[ext_resource type="Script" path="res://scripts/data/RecipeData.gd" id="1_RecipeData"]
+
+[resource]
+script = ExtResource("1_RecipeData")
+recipe_id = "short_sword"
+display_name = "Short Sword"
+description = "A properly tempered and ground short sword. Worth every minute."
+ingredients = {"iron_ore": 4, "coal": 2, "leather": 1}
+station_sequence = ["furnace", "anvil", "quench_barrel", "grinding_wheel", "leatherworking_bench", "inspection_table"]
+base_gold_value = 30
+output_item_id = "graded_short_sword"
