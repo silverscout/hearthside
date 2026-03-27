@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://station_base_001"]
+
+[ext_resource type="Script" path="res://scripts/stations/StationBase.gd" id="1_base"]
+
+[sub_resource type="RectangleShape2D" id="Shape_station"]
+size = Vector2(60, 60)
+
+[node name="StationBase" type="Area2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_base")
+
+[node name="Sprite" type="ColorRect" parent="."]
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+color = Color(0.38, 0.38, 0.40, 1.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("Shape_station")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -30.0
+offset_top = -42.0
+offset_right = 30.0
+offset_bottom = -30.0
+min_value = 0.0
+max_value = 1.0
+value = 0.0
+visible = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = -40.0
+offset_top = 32.0
+offset_right = 40.0
+offset_bottom = 60.0
+horizontal_alignment = 1
+text = "Station"
