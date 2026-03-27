@@ -1,0 +1,31 @@
+{
+  "recipes": [
+    {
+      "recipe_id": "iron_dagger",
+      "display_name": "Iron Dagger",
+      "description": "A simple iron dagger — quick to craft and reliable in a pinch.",
+      "ingredients": { "iron_ore": 2, "coal": 1, "leather": 1 },
+      "station_sequence": ["furnace", "anvil", "leatherworking_bench", "inspection_table"],
+      "base_gold_value": 15,
+      "output_item_id": "graded_iron_dagger"
+    },
+    {
+      "recipe_id": "short_sword",
+      "display_name": "Short Sword",
+      "description": "A properly tempered and ground short sword. Worth every minute.",
+      "ingredients": { "iron_ore": 4, "coal": 2, "leather": 1 },
+      "station_sequence": ["furnace", "anvil", "quench_barrel", "grinding_wheel", "leatherworking_bench", "inspection_table"],
+      "base_gold_value": 30,
+      "output_item_id": "graded_short_sword"
+    },
+    {
+      "recipe_id": "iron_shield",
+      "display_name": "Iron Shield",
+      "description": "A solid iron shield — tempered for durability, reinforced with leather straps.",
+      "ingredients": { "iron_ore": 3, "coal": 2, "leather": 2 },
+      "station_sequence": ["furnace", "anvil", "quench_barrel", "leatherworking_bench", "inspection_table"],
+      "base_gold_value": 25,
+      "output_item_id": "graded_iron_shield"
+    }
+  ]
+}
