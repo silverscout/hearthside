@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=2 format=3 uid="uid://iron_dagger_recipe"]
+
+[ext_resource type="Script" path="res://scripts/data/RecipeData.gd" id="1_RecipeData"]
+
+[resource]
+script = ExtResource("1_RecipeData")
+recipe_id = "iron_dagger"
+display_name = "Iron Dagger"
+description = "A simple iron dagger — quick to craft and reliable in a pinch."
+ingredients = {"iron_ore": 2, "coal": 1, "leather": 1}
+station_sequence = ["furnace", "anvil", "leatherworking_bench", "inspection_table"]
+base_gold_value = 15
+output_item_id = "graded_iron_dagger"
